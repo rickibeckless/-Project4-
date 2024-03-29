@@ -1,48 +1,116 @@
-.app {
+#base {
+    min-height: 100dvh;
+    background-color: #f5f5dc;
+
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+
+    padding: 1.5rem;
+}
+
+#base h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+#cat-gen-btn {
+    background-color: #f5f5dc;
+    border: 2px solid #000000;
+    border-radius: 5px;
+
+    padding: 1%;
+    margin: 1%;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.cat-card-holder {
+    width: 50vw;
+
+    margin: 0 2rem 2rem;
+    padding: 0 2% 2%;
 }
 
 .cat-card {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
 
-    width: 60vw;
+    background-color: #cdcdb57d;
+    border-radius: 20px;
+
+    padding: 2% 5% 5%;
+    margin: 2%;
 }
 
 #cat-img {
-    max-width: 30vw;
-    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.ban-list {
-    margin-top: 20px;
+#card-breed {
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 
-.ban-list ul {
-    list-style: none;
-    padding: 0;
+#card-breed span {
+    font-size: 1.65rem;
+    font-weight: 500;
+    font-variant: small-caps;
 }
 
-.ban-list li {
-    margin-bottom: 5px;
-    font-size: 16px;
-}
-
-#cat-card-holder {
+.attrib-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     flex-direction: column;
+    gap: 1rem;
+
+    padding: 0 4%;
+}
+
+#card-description {
+    font-style: italic;
+    text-align: justify;
+    
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-content: center;
 }
 
 .card-info span {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#ban-btn-holder {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#ban-btn {
+    width: 70%;
+    background-color: #9c4848;
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+    padding: 1% 3%;
+    margin: 1%;
+    font-size: 1.2em;
     font-weight: bold;
+
+    cursor: pointer;
 }

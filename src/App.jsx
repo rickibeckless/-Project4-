@@ -75,16 +75,15 @@ const App = () => {
     const filteredBreeds = breeds.filter(breed => !banList.includes(breed.name));
 
     return (
-        <div id="cat-card-holder">
+        <div id="base">
             <h1>Cat Explorer</h1>
             {loading && <p>Loading...</p>}
             {!loading && catData && (
                 <CatCardMemoized catData={catData} breeds={filteredBreeds} onBanAttribute={handleBanAttribute} banList={banList} />
             )}
-            <button onClick={handleNewCatClick}>Find New Cat</button>
+            <button id="cat-gen-btn" onClick={handleNewCatClick}>Find New Cat</button>
         </div>
     );
 };
 
 export default App;
-
